@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +9,151 @@
 
 <style>
 
-body {
-    font-family: Georgia, serif;
-    background: #f8f8f7;
-    color: #222;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 80px 40px;
-    line-height: 1.8;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h1 {
-    font-size: 44px;
-    font-weight: normal;
-    margin-bottom: 10px;
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#ffffff;
+    color:#1f2937;
+    line-height:1.7;
 }
 
-h2 {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #666;
-    margin-top: 70px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 30px;
 }
 
-p {
-    max-width: 700px;
+header{
+    border-bottom:1px solid #e5e7eb;
+    background:white;
 }
 
-a {
-    color: #222;
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
 }
 
-.footer {
-    margin-top: 80px;
-    font-size: 14px;
-    color: #666;
+.logo{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:.3px;
+}
+
+.hero{
+    padding:90px 0 80px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:54px;
+    font-weight:700;
+    margin-bottom:18px;
+    color:#111827;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    font-size:20px;
+    color:#4b5563;
+}
+
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    font-size:30px;
+    margin-bottom:25px;
+    color:#111827;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+}
+
+.card{
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:24px;
+    background:#fafafa;
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#111827;
+}
+
+.card p{
+    color:#4b5563;
+}
+
+.company{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.info-box{
+    background:#f9fafb;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:28px;
+}
+
+.info-box h3{
+    margin-bottom:20px;
+}
+
+.info-box p{
+    margin-bottom:12px;
+}
+
+.footer{
+    border-top:1px solid #e5e7eb;
+    margin-top:60px;
+    padding:40px 0;
+    color:#6b7280;
+    text-align:center;
+}
+
+.links{
+    margin-top:15px;
+}
+
+.links a{
+    color:#2563eb;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:800px){
+
+.company{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
 }
 
 </style>
@@ -53,87 +161,146 @@ a {
 
 <body>
 
-<h1>Borealis Index SRL</h1>
+<header>
+<div class="container">
+<div class="nav">
+<div class="logo">Borealis Index SRL</div>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+
+<h1>Cross-Border Business Visibility Services</h1>
 
 <p>
-Borealis Index SRL is a Romania-based business information and
-cross-border visibility services company supporting professional
-service providers, advisory firms, consultants and specialized
-businesses operating in international markets.
+Borealis Index SRL provides business visibility, publication,
+profiling and informational support services for professional firms,
+consultants and specialized organizations operating across
+international markets.
 </p>
 
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Business Visibility</h3>
 <p>
-The company develops and maintains digital reference environments,
-business visibility records and informational publication structures
-intended to facilitate international discoverability and professional
-positioning across jurisdictions and commercial sectors.
+Support for organizations seeking improved visibility,
+discoverability and positioning in international business environments.
+</p>
+</div>
+
+<div class="card">
+<h3>Information Publishing</h3>
+<p>
+Development and maintenance of informational publication structures
+and business reference environments.
+</p>
+</div>
+
+<div class="card">
+<h3>Professional Profiles</h3>
+<p>
+Creation and maintenance of business profiles and visibility records
+for specialized service providers.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="company">
+
+<div>
+
+<h2 class="section-title">About the Company</h2>
+
+<p>
+Borealis Index SRL is a Romania-based business services company
+focused on business visibility, informational publishing,
+professional profiling and related support services for organizations
+operating in international and cross-border markets.
 </p>
 
-<h2>Business Activities</h2>
+<br>
 
 <p>
-Services may include business profiling, professional visibility
-services, digital publication initiatives, directory inclusion,
-reference record maintenance, informational publishing and related
-business support services for organizations engaged in cross-border
-commercial activity.
-</p>
-
-<h2>Contact Information</h2>
-
-<p>
-<strong>Legal Entity:</strong><br>
-BOREALIS INDEX SRL
-</p>
-
-<p>
-<strong>VAT Number:</strong><br>
-RO54187197
-</p>
-
-<p>
-<strong>Registered Address:</strong><br>
-Sat Hoteni, Comuna Ocna Șugatag, Nr. 1<br>
-437207 Hoteni<br>
-Maramureș County<br>
-Romania
-</p>
-
-<p>
-<strong>Email:</strong><br>
-admin@borealis-index.com
-</p>
-
-<p>
-<strong>Telephone:</strong><br>
-+40 792 757 060
-</p>
-
-<h2>Compliance</h2>
-
-<p>
-Borealis Index SRL conducts business in accordance with applicable
-Romanian and European Union regulations governing commercial activity,
-electronic communications and business services.
-</p>
-
-<p>
-Privacy and contractual information are available through the links
-below.
-</p>
-
-<div class="footer">
-
-<p>
-<a href="privacy.html">Privacy Policy</a><br>
-<a href="terms.html">Terms and Conditions</a>
-</p>
-
-<p>
-© Borealis Index SRL
+The company works with professional service providers,
+consultancies, advisory firms and specialized businesses seeking
+to strengthen discoverability and commercial visibility within
+their respective sectors.
 </p>
 
 </div>
 
+<div class="info-box">
+
+<h3>Company Information</h3>
+
+<p><strong>Legal Entity:</strong><br>
+BOREALIS INDEX SRL</p>
+
+<p><strong>VAT Number:</strong><br>
+RO54187197</p>
+
+<p><strong>Address:</strong><br>
+Sat Hoteni, Comuna Ocna Șugatag, Nr. 1<br>
+437207 Hoteni<br>
+Maramureș County<br>
+Romania</p>
+
+<p><strong>Email:</strong><br>
+admin@borealis-index.com</p>
+
+<p><strong>Telephone:</strong><br>
++40 792 757 060</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Compliance</h2>
+
+<p>
+Borealis Index SRL conducts business in accordance with applicable
+Romanian and European Union regulations governing commercial
+activities, electronic communications and business services.
+</p>
+
+</div>
+</section>
+
+<footer class="footer">
+
+<p>© Borealis Index SRL</p>
+
+<div class="links">
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms & Conditions</a>
+</div>
+
+</footer>
+
 </body>
 </html>
+```
