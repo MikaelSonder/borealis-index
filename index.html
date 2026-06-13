@@ -33,14 +33,14 @@ overflow-x:hidden;
 body::before{
 content:"";
 position:fixed;
-top:-15%;
+top:-10%;
 left:50%;
 transform:translateX(-50%);
 width:1400px;
-height:900px;
+height:1000px;
 background:
 radial-gradient(circle,
-rgba(255,255,255,.12) 0%,
+rgba(255,255,255,.10) 0%,
 rgba(255,255,255,.03) 35%,
 transparent 70%);
 pointer-events:none;
@@ -57,7 +57,7 @@ border-bottom:1px solid rgba(255,255,255,.06);
 }
 
 .header-inner{
-height:88px;
+height:82px;
 display:flex;
 align-items:center;
 }
@@ -77,7 +77,7 @@ font-weight:500;
 }
 
 .hero{
-padding:140px 0 120px;
+padding:120px 0 100px;
 text-align:center;
 }
 
@@ -91,10 +91,10 @@ margin:auto;
 }
 
 .hero p{
-max-width:720px;
-margin:40px auto 0;
-font-size:1.15rem;
-color:#9f9f9f;
+max-width:760px;
+margin:35px auto 0;
+font-size:1.1rem;
+color:#9a9a9a;
 }
 
 .divider{
@@ -104,7 +104,7 @@ background:rgba(255,255,255,.06);
 }
 
 section{
-padding:120px 0;
+padding:95px 0;
 }
 
 .section-label{
@@ -118,63 +118,63 @@ margin-bottom:14px;
 h2{
 font-size:3rem;
 letter-spacing:-.05em;
-margin-bottom:60px;
+margin-bottom:50px;
 }
 
 .scope-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:60px;
+gap:50px;
 }
 
 .scope-item{
-padding-bottom:25px;
+padding-bottom:24px;
 border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .scope-number{
 font-size:.75rem;
 color:#666;
-margin-bottom:18px;
+margin-bottom:16px;
 }
 
 .scope-item h3{
-font-size:1.5rem;
-margin-bottom:15px;
+font-size:1.45rem;
+margin-bottom:14px;
 }
 
 .scope-item p{
-color:#9c9c9c;
+color:#9a9a9a;
 }
 
 .about{
 display:grid;
 grid-template-columns:1.4fr .8fr;
-gap:100px;
+gap:80px;
 align-items:start;
 }
 
 .about p{
 color:#a8a8a8;
-margin-bottom:28px;
-font-size:1.05rem;
+margin-bottom:24px;
+font-size:1.03rem;
 }
 
 .identity-card{
-padding:35px;
+padding:28px;
 border:1px solid rgba(255,255,255,.08);
-border-radius:28px;
+border-radius:24px;
 background:rgba(255,255,255,.02);
 }
 
 .identity-card h3{
-font-size:1.4rem;
-margin-bottom:25px;
+font-size:1.3rem;
+margin-bottom:24px;
 }
 
 .identity-line{
 margin-bottom:16px;
-color:#cfcfcf;
+color:#d4d4d4;
 }
 
 .identity-label{
@@ -186,16 +186,39 @@ display:block;
 margin-bottom:5px;
 }
 
+.inquiries{
+padding:50px;
+border-radius:28px;
+background:rgba(255,255,255,.02);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.inquiries h3{
+font-size:2rem;
+margin-bottom:18px;
+}
+
+.inquiries p{
+color:#a8a8a8;
+max-width:700px;
+}
+
+.inquiries-email{
+margin-top:25px;
+font-size:1.2rem;
+font-weight:600;
+}
+
 .compliance{
-padding:55px;
-border-radius:30px;
+padding:50px;
+border-radius:28px;
 background:rgba(255,255,255,.02);
 border:1px solid rgba(255,255,255,.08);
 }
 
 .compliance h3{
 font-size:2rem;
-margin-bottom:18px;
+margin-bottom:16px;
 }
 
 .compliance p{
@@ -203,7 +226,7 @@ color:#a8a8a8;
 }
 
 footer{
-margin-top:80px;
+margin-top:50px;
 border-top:1px solid rgba(255,255,255,.06);
 padding:40px 0;
 }
@@ -219,6 +242,13 @@ font-size:.82rem;
 color:#757575;
 }
 
+.registered{
+margin-top:16px;
+font-size:.75rem;
+line-height:1.8;
+color:#5f5f5f;
+}
+
 .footer-right a{
 color:#8f8f8f;
 text-decoration:none;
@@ -230,17 +260,10 @@ font-size:.85rem;
 color:white;
 }
 
-.registered{
-margin-top:18px;
-font-size:.75rem;
-line-height:1.8;
-color:#5f5f5f;
-}
-
 @media(max-width:900px){
 
 .hero{
-padding:100px 0;
+padding:90px 0;
 }
 
 .scope-grid{
@@ -249,7 +272,7 @@ grid-template-columns:1fr;
 
 .about{
 grid-template-columns:1fr;
-gap:60px;
+gap:50px;
 }
 
 .footer{
@@ -262,6 +285,7 @@ gap:20px;
 
 </style>
 </head>
+
 <body>
 
 <header>
@@ -313,13 +337,9 @@ Commercial Infrastructure
 
 <div class="scope-item">
 
-<div class="scope-number">
-01
-</div>
+<div class="scope-number">01</div>
 
-<h3>
-Commercial Visibility
-</h3>
+<h3>Commercial Visibility</h3>
 
 <p>
 Visibility environments and positioning structures supporting professional organizations operating across jurisdictions.
@@ -329,13 +349,9 @@ Visibility environments and positioning structures supporting professional organ
 
 <div class="scope-item">
 
-<div class="scope-number">
-02
-</div>
+<div class="scope-number">02</div>
 
-<h3>
-Information Structures
-</h3>
+<h3>Information Structures</h3>
 
 <p>
 Development and maintenance of informational publication environments and reference-oriented content systems.
@@ -345,13 +361,9 @@ Development and maintenance of informational publication environments and refere
 
 <div class="scope-item">
 
-<div class="scope-number">
-03
-</div>
+<div class="scope-number">03</div>
 
-<h3>
-Professional Reference Systems
-</h3>
+<h3>Professional Reference Systems</h3>
 
 <p>
 Creation and administration of professional profiles, records and commercial visibility assets.
@@ -422,6 +434,30 @@ admin@borealis-index.com
 <div class="identity-line">
 <span class="identity-label">Jurisdiction</span>
 Romania
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="inquiries">
+
+<h3>
+Commercial Inquiries
+</h3>
+
+<p>
+For commercial inquiries, partnership discussions, administrative matters or business-related correspondence, contact the company directly using the address below. All inquiries are reviewed and handled through private commercial engagement.
+</p>
+
+<div class="inquiries-email">
+admin@borealis-index.com
 </div>
 
 </div>
