@@ -33,12 +33,12 @@ overflow-x:hidden;
 body:before{
 content:"";
 position:fixed;
-top:-300px;
+top:-350px;
 left:50%;
 transform:translateX(-50%);
-width:1200px;
-height:1200px;
-background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%);
+width:1300px;
+height:1300px;
+background:radial-gradient(circle,rgba(255,255,255,.06),transparent 70%);
 pointer-events:none;
 z-index:-1;
 }
@@ -67,7 +67,7 @@ margin-top:4px;
 }
 
 .hero{
-padding:120px 0 110px;
+padding:120px 0 100px;
 text-align:center;
 border-bottom:1px solid rgba(255,255,255,.05);
 }
@@ -75,7 +75,7 @@ border-bottom:1px solid rgba(255,255,255,.05);
 .hero h1{
 font-size:clamp(4rem,10vw,7rem);
 line-height:.92;
-letter-spacing:-.07em;
+letter-spacing:-.08em;
 font-weight:800;
 max-width:900px;
 margin:auto;
@@ -83,13 +83,13 @@ margin:auto;
 
 .hero p{
 max-width:760px;
-margin:38px auto 0;
+margin:36px auto 0;
 font-size:1.15rem;
 color:#9b9b9b;
 }
 
 section{
-padding:110px 0;
+padding:95px 0;
 }
 
 .section-label{
@@ -101,25 +101,25 @@ margin-bottom:20px;
 }
 
 .section-title{
-font-size:3.3rem;
+font-size:3.2rem;
 font-weight:800;
 letter-spacing:-.05em;
-margin-bottom:55px;
+margin-bottom:50px;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:50px;
+gap:40px;
 }
 
 .service h3{
-font-size:1.8rem;
+font-size:1.7rem;
 margin-bottom:15px;
 }
 
 .service p{
-color:#9c9c9c;
+color:#9d9d9d;
 }
 
 .service:after{
@@ -128,7 +128,58 @@ display:block;
 width:60px;
 height:1px;
 background:rgba(255,255,255,.1);
-margin-top:25px;
+margin-top:22px;
+}
+
+.engagement{
+text-align:center;
+padding:95px 0;
+border-top:1px solid rgba(255,255,255,.05);
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.engagement-label{
+font-size:.65rem;
+letter-spacing:.35em;
+text-transform:uppercase;
+color:#666;
+margin-bottom:16px;
+}
+
+.engagement h2{
+font-size:clamp(3rem,5vw,4.5rem);
+font-weight:800;
+letter-spacing:-.05em;
+margin-bottom:20px;
+}
+
+.engagement p{
+max-width:650px;
+margin:auto;
+color:#9b9b9b;
+}
+
+.engagement-button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+margin-top:32px;
+
+padding:12px 26px;
+
+border-radius:999px;
+background:#ffffff;
+color:#050505;
+
+font-size:.88rem;
+font-weight:600;
+
+text-decoration:none;
+transition:.25s;
+}
+
+.engagement-button:hover{
+transform:translateY(-2px);
 }
 
 .about{
@@ -140,19 +191,19 @@ align-items:start;
 
 .about-text p{
 color:#a0a0a0;
-margin-bottom:28px;
+margin-bottom:26px;
 }
 
 .info-card{
 background:rgba(255,255,255,.02);
 border:1px solid rgba(255,255,255,.05);
 border-radius:24px;
-padding:40px;
+padding:38px;
 }
 
 .info-card h3{
-margin-bottom:30px;
 font-size:1.6rem;
+margin-bottom:28px;
 }
 
 .info-label{
@@ -160,7 +211,7 @@ font-size:.65rem;
 letter-spacing:.2em;
 text-transform:uppercase;
 color:#666;
-margin-top:24px;
+margin-top:20px;
 margin-bottom:6px;
 }
 
@@ -168,61 +219,17 @@ margin-bottom:6px;
 color:#f5f5f5;
 }
 
-.engagement{
-text-align:center;
-padding:90px 20px;
-border-top:1px solid rgba(255,255,255,.05);
-border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-.engagement-label{
-font-size:.70rem;
-letter-spacing:.35em;
-text-transform:uppercase;
-color:#666;
-margin-bottom:18px;
-}
-
-.engagement h2{
-font-size:clamp(2.5rem,5vw,4.5rem);
-letter-spacing:-.05em;
-margin-bottom:22px;
-}
-
-.engagement p{
-max-width:680px;
-margin:auto;
-color:#9b9b9b;
-font-size:1.05rem;
-}
-
-.engagement-button{
-display:inline-flex;
-margin-top:40px;
-padding:16px 34px;
-border-radius:999px;
-background:#ffffff;
-color:#050505;
-font-weight:600;
-text-decoration:none;
-transition:.25s;
-}
-
-.engagement-button:hover{
-transform:translateY(-2px);
-}
-
 .compliance{
 background:rgba(255,255,255,.02);
 border:1px solid rgba(255,255,255,.05);
 border-radius:28px;
-padding:50px;
-margin-top:80px;
+padding:45px;
+margin-top:60px;
 }
 
 .compliance h3{
 font-size:2rem;
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 .compliance p{
@@ -231,6 +238,7 @@ color:#9c9c9c;
 
 footer{
 padding:40px 0;
+margin-top:80px;
 border-top:1px solid rgba(255,255,255,.05);
 }
 
@@ -248,9 +256,9 @@ color:#666;
 }
 
 .footer-right a{
-color:#9a9a9a;
+color:#888;
 text-decoration:none;
-margin-left:30px;
+margin-left:28px;
 }
 
 .footer-right a:hover{
@@ -263,9 +271,12 @@ color:#fff;
 padding:90px 0;
 }
 
+.hero h1{
+font-size:4rem;
+}
+
 .services{
 grid-template-columns:1fr;
-gap:40px;
 }
 
 .about{
@@ -276,8 +287,8 @@ grid-template-columns:1fr;
 font-size:2.5rem;
 }
 
-.hero h1{
-font-size:4rem;
+.engagement h2{
+font-size:2.6rem;
 }
 
 }
@@ -361,6 +372,34 @@ Creation and administration of professional profiles, records and commercial vis
 
 <section>
 
+<div class="container">
+
+<div class="engagement">
+
+<div class="engagement-label">
+Commercial Engagement
+</div>
+
+<h2>
+Commercial Engagement
+</h2>
+
+<p>
+Commercial relationships are established through direct engagement and privately negotiated arrangements.
+</p>
+
+<a href="mailto:admin@borealis-index.com" class="engagement-button">
+Business Contact
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
 <div class="container about">
 
 <div class="about-text">
@@ -410,32 +449,6 @@ The company maintains operational independence and delivers services through dir
 
 </div>
 
-</section>
-
-<section>
-
-<div class="container">
-
-<div class="engagement">
-
-<div class="engagement-label">
-Commercial Engagement
-</div>
-
-<h2>
-Direct Business Relations
-</h2>
-
-<p>
-Commercial relationships are established through direct engagement and privately negotiated arrangements.
-</p>
-
-<a href="mailto:admin@borealis-index.com" class="engagement-button">
-Contact Administration
-</a>
-
-</div>
-
 <div class="compliance">
 
 <h3>Regulatory Compliance</h3>
@@ -443,8 +456,6 @@ Contact Administration
 <p>
 Borealis Index SRL conducts business in accordance with applicable Romanian and European Union regulations governing commercial activity, electronic communications and business services.
 </p>
-
-</div>
 
 </div>
 
