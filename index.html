@@ -23,14 +23,14 @@ scroll-behavior:smooth;
 }
 
 body{
+font-family:'Inter',sans-serif;
 background:#050505;
 color:#f5f5f5;
-font-family:'Inter',sans-serif;
 line-height:1.7;
 overflow-x:hidden;
 }
 
-body:before{
+body::before{
 content:"";
 position:fixed;
 top:-350px;
@@ -38,18 +38,18 @@ left:50%;
 transform:translateX(-50%);
 width:1300px;
 height:1300px;
-background:radial-gradient(circle,rgba(255,255,255,.06),transparent 70%);
+background:radial-gradient(circle,rgba(255,255,255,.05),transparent 70%);
 pointer-events:none;
 z-index:-1;
 }
 
 .container{
-width:min(1180px,90%);
+width:min(1100px,90%);
 margin:auto;
 }
 
 header{
-padding:22px 0;
+padding:18px 0;
 border-bottom:1px solid rgba(255,255,255,.05);
 }
 
@@ -67,29 +67,29 @@ margin-top:4px;
 }
 
 .hero{
-padding:120px 0 100px;
+padding:100px 0 70px;
 text-align:center;
 border-bottom:1px solid rgba(255,255,255,.05);
 }
 
 .hero h1{
-font-size:clamp(4rem,10vw,7rem);
-line-height:.92;
-letter-spacing:-.08em;
+font-size:clamp(4rem,10vw,6.5rem);
+line-height:.9;
 font-weight:800;
+letter-spacing:-.08em;
 max-width:900px;
 margin:auto;
 }
 
 .hero p{
-max-width:760px;
-margin:36px auto 0;
-font-size:1.15rem;
-color:#9b9b9b;
+max-width:700px;
+margin:32px auto 0;
+font-size:1.05rem;
+color:#9a9a9a;
 }
 
 section{
-padding:95px 0;
+padding:70px 0;
 }
 
 .section-label{
@@ -97,85 +97,73 @@ font-size:.65rem;
 letter-spacing:.35em;
 text-transform:uppercase;
 color:#555;
-margin-bottom:20px;
+margin-bottom:18px;
 }
 
 .section-title{
-font-size:3.2rem;
+font-size:3rem;
 font-weight:800;
 letter-spacing:-.05em;
-margin-bottom:50px;
+margin-bottom:45px;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:40px;
+gap:45px;
 }
 
 .service h3{
-font-size:1.7rem;
-margin-bottom:15px;
+font-size:1.5rem;
+margin-bottom:14px;
 }
 
 .service p{
-color:#9d9d9d;
+color:#9c9c9c;
 }
 
 .service:after{
 content:"";
 display:block;
-width:60px;
+width:45px;
 height:1px;
-background:rgba(255,255,255,.1);
-margin-top:22px;
+background:rgba(255,255,255,.12);
+margin-top:20px;
 }
 
 .engagement{
 text-align:center;
-padding:95px 0;
+padding:60px 0;
 border-top:1px solid rgba(255,255,255,.05);
 border-bottom:1px solid rgba(255,255,255,.05);
 }
 
-.engagement-label{
-font-size:.65rem;
-letter-spacing:.35em;
-text-transform:uppercase;
-color:#666;
-margin-bottom:16px;
-}
-
 .engagement h2{
-font-size:clamp(3rem,5vw,4.5rem);
+font-size:3rem;
 font-weight:800;
 letter-spacing:-.05em;
-margin-bottom:20px;
+margin-bottom:14px;
 }
 
 .engagement p{
-max-width:650px;
+max-width:520px;
 margin:auto;
-color:#9b9b9b;
+color:#9c9c9c;
 }
 
 .engagement-button{
 display:inline-flex;
 align-items:center;
 justify-content:center;
-margin-top:32px;
-
-padding:12px 26px;
-
-border-radius:999px;
+margin-top:24px;
+padding:11px 22px;
 background:#ffffff;
 color:#050505;
-
-font-size:.88rem;
-font-weight:600;
-
 text-decoration:none;
-transition:.25s;
+font-weight:600;
+font-size:.85rem;
+border-radius:999px;
+transition:.2s;
 }
 
 .engagement-button:hover{
@@ -185,25 +173,20 @@ transform:translateY(-2px);
 .about{
 display:grid;
 grid-template-columns:1.3fr .8fr;
-gap:80px;
+gap:60px;
 align-items:start;
 }
 
 .about-text p{
+margin-bottom:24px;
 color:#a0a0a0;
-margin-bottom:26px;
 }
 
 .info-card{
 background:rgba(255,255,255,.02);
 border:1px solid rgba(255,255,255,.05);
 border-radius:24px;
-padding:38px;
-}
-
-.info-card h3{
-font-size:1.6rem;
-margin-bottom:28px;
+padding:34px;
 }
 
 .info-label{
@@ -211,7 +194,7 @@ font-size:.65rem;
 letter-spacing:.2em;
 text-transform:uppercase;
 color:#666;
-margin-top:20px;
+margin-top:18px;
 margin-bottom:6px;
 }
 
@@ -220,16 +203,17 @@ color:#f5f5f5;
 }
 
 .compliance{
+max-width:1100px;
+margin:30px auto 0;
 background:rgba(255,255,255,.02);
 border:1px solid rgba(255,255,255,.05);
-border-radius:28px;
-padding:45px;
-margin-top:60px;
+border-radius:24px;
+padding:38px;
 }
 
 .compliance h3{
 font-size:2rem;
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .compliance p{
@@ -237,8 +221,8 @@ color:#9c9c9c;
 }
 
 footer{
-padding:40px 0;
-margin-top:80px;
+margin-top:60px;
+padding:35px 0;
 border-top:1px solid rgba(255,255,255,.05);
 }
 
@@ -246,8 +230,8 @@ border-top:1px solid rgba(255,255,255,.05);
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:20px;
 flex-wrap:wrap;
+gap:20px;
 }
 
 .footer-left{
@@ -256,20 +240,16 @@ color:#666;
 }
 
 .footer-right a{
-color:#888;
 text-decoration:none;
-margin-left:28px;
+color:#888;
+margin-left:25px;
 }
 
 .footer-right a:hover{
-color:#fff;
+color:white;
 }
 
 @media(max-width:900px){
-
-.hero{
-padding:90px 0;
-}
 
 .hero h1{
 font-size:4rem;
@@ -284,11 +264,11 @@ grid-template-columns:1fr;
 }
 
 .section-title{
-font-size:2.5rem;
+font-size:2.3rem;
 }
 
 .engagement h2{
-font-size:2.6rem;
+font-size:2.5rem;
 }
 
 }
@@ -320,9 +300,7 @@ Cross-Border Commercial Visibility
 </h1>
 
 <p>
-Borealis Index SRL develops and maintains commercial visibility environments,
-informational publication structures and professional reference assets supporting
-international business activity.
+Borealis Index SRL develops and maintains commercial visibility environments, informational publication structures and professional reference assets supporting international business activity.
 </p>
 
 </div>
@@ -376,20 +354,20 @@ Creation and administration of professional profiles, records and commercial vis
 
 <div class="engagement">
 
-<div class="engagement-label">
-Commercial Engagement
+<div class="section-label">
+Contact
 </div>
 
 <h2>
-Commercial Engagement
+Business Contact
 </h2>
 
 <p>
-Commercial relationships are established through direct engagement and privately negotiated arrangements.
+For commercial inquiries and administrative correspondence, contact the company directly.
 </p>
 
 <a href="mailto:admin@borealis-index.com" class="engagement-button">
-Business Contact
+Contact
 </a>
 
 </div>
@@ -427,8 +405,6 @@ The company maintains operational independence and delivers services through dir
 </div>
 
 <div class="info-card">
-
-<h3>Entity Information</h3>
 
 <div class="info-label">Legal Entity</div>
 <div class="info-value">BOREALIS INDEX SRL</div>
